@@ -1,0 +1,55 @@
+.edit h1{
+    text-align: center;
+    color:grey;
+    letter-spacing: 0.2rem;
+    font: size 25px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.edit form{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(226, 208, 208);
+    box-shadow: 0 0 2px 1px dodgerblue;
+    padding:15px;
+    width: 400px;
+    margin:0 auto;
+}
+
+.edit form input{
+    padding:5px;
+    outline:none;
+    border:1px solid dodgerblue;
+
+}
+
+.edit form .inputs{
+    margin-bottom:10px;
+
+}
+
+
+.edit form button{
+    font-size: 18px;
+    margin-top:15px;
+    background-color:dodgerblue;
+    padding:5px;
+    outline:none;
+    color:white;
+    letter-spacing: 0.1rem;
+}
+
+.edit form button:hover{
+    background-color:green;
+}
+
+.backBtn{
+    background-color:crimson !important;
+    width:100%;
+}
+
+.backBtn:hover{
+    background-color:rgb(238, 78, 110) !important;
+}
