@@ -29,7 +29,7 @@ export default function Editinfo(props) {
       name,
       occupation,
       email,
-      date,
+      date:e.target.date.value,
     };
     axios.put(`/info/${props.match.params.id}`, itemdata).then((res) => {
       setEditMsg(res.data.msg);
@@ -52,9 +52,9 @@ export default function Editinfo(props) {
     setEmail(e.target.value);
   };
 
-  const onChangeDate = (e) => {
-    setDate(e.target.value);
-  };
+  // const onChangeDate = (e) => {
+  //   setDate(e.target.value);
+  // };
   return (
     <div className="edit">
       <h1>update info</h1>
@@ -95,7 +95,8 @@ export default function Editinfo(props) {
               type="date"
               placeholder="Enter date"
               className="inputs"
-              onchange={onChangeDate}
+              name="date"
+              // onchange={onChangeDate}
             />
 
             <button type="submit"> update</button>
